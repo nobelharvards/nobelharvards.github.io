@@ -1,3 +1,21 @@
-main {
-    margin-top: 5%;
+.section {
+    margin-bottom: 10%;
+}
+.heading {
+    padding-top: 5%;
+    &--center {
+        text-align: center;
+    }
+}
+.contact {
+    &--center {
+        text-align: center;
+    }
+}
+/* body {
+    background-color: black;
+    color: white
+} */
+html {
+    scroll-behavior: smooth;
 }
