@@ -173,7 +173,7 @@ function App() {
                   <Card.Title>OMDb API movie search</Card.Title>
                   <Card.Text>Uses OMDb API to search for movies.</Card.Text>
                   <div style={{display: "flex", justifyContent: "space-between", marginTop: "auto"}}>
-                    <a href="/OMDb-API">
+                    <a href="https://github.com/nobelharvards/OMDb-API">
                       <Button variant="secondary">GitHub</Button>
                     </a>
                     <a href="/OMDb-API">
