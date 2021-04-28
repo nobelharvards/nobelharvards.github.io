@@ -176,7 +176,7 @@ function App() {
                     <a href="/OMDb-API">
                       <Button variant="secondary">GitHub</Button>
                     </a>
-                    <a href="/morse-code-translator">
+                    <a href="/OMDb-API">
                       <Button variant="primary">App</Button>
                     </a>
                   </div>
