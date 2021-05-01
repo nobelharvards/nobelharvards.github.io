@@ -174,10 +174,10 @@ function App() {
                   <Card.Text>Uses OMDb API to search for movies.</Card.Text>
                   <div style={{display: "flex", justifyContent: "space-between", marginTop: "auto"}}>
                     <a href="https://github.com/nobelharvards/OMDb-API">
-                      <Button variant="secondary">GitHub</Button>
+                      <Button variant="outline-secondary">GitHub</Button>
                     </a>
                     <a href="/OMDb-API">
-                      <Button variant="primary">App</Button>
+                      <Button variant="outline-primary">App</Button>
                     </a>
                   </div>
                 </Card.Body>
@@ -190,10 +190,10 @@ function App() {
                   <Card.Text>Translates English to Morse and Morse to English. Also allows custom delimiters.</Card.Text>
                   <div style={{display: "flex", justifyContent: "space-between", marginTop: "auto"}}>
                     <a href="https://github.com/nobelharvards/morse-code-translator">
-                      <Button variant="secondary">GitHub</Button>
+                      <Button variant="outline-secondary">GitHub</Button>
                     </a>
                     <a href="/morse-code-translator">
-                      <Button variant="primary">App</Button>
+                      <Button variant="outline-primary">App</Button>
                     </a>
                   </div>
                 </Card.Body>
@@ -205,7 +205,7 @@ function App() {
                   <Card.Title>QBE insurance quote automation</Card.Title>
                   <Card.Text>Selenium script for getting an anonymous NSW green slip quote at <a href="https://qbe.com/au">QBE Australia</a>.</Card.Text>
                   <a href="https://github.com/nobelharvards/QBEautomation" style={{marginTop: "auto"}}>
-                    <Button variant="secondary">GitHub</Button>
+                    <Button variant="outline-secondary">GitHub</Button>
                   </a>
                 </Card.Body>
               </Card>
@@ -217,7 +217,7 @@ function App() {
                   <Card.Text>Android eBay app automation script.</Card.Text>
                   <Card.Text>Uses Selenium and Appium.</Card.Text>
                   <a href="https://github.com/nobelharvards/eBayAppAutomation" style={{marginTop: "auto"}}>
-                    <Button variant="secondary">GitHub</Button>
+                    <Button variant="outline-secondary">GitHub</Button>
                   </a>
                 </Card.Body>
               </Card>
@@ -228,7 +228,7 @@ function App() {
                   <Card.Title>Blue dress purchase automation</Card.Title>
                   <Card.Text>Selenium script for buying a blue dress at <a href="http://automationpractice.com">AutomationPractice.com</a>.</Card.Text>
                   <a href="https://github.com/nobelharvards/UIAutomationAssignment" style={{marginTop: "auto"}}>
-                    <Button variant="secondary">GitHub</Button>
+                    <Button variant="outline-secondary">GitHub</Button>
                   </a>
                 </Card.Body>
               </Card>
@@ -246,7 +246,7 @@ function App() {
                 <FontAwesomeIcon size="5x" icon={icon.icon}/>
               </a>
             )}
-            <p id="copyright">Copyright © 2021{/* -{new Date().getFullYear()} */} Nobel Harvards</p>
+            <p id="copyright">© 2021{/* -{new Date().getFullYear()} */} Nobel Harvards</p>
           </div>
         </div>
       </main>

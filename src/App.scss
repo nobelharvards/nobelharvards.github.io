@@ -12,10 +12,135 @@
         text-align: center;
     }
 }
-/* body {
+
+body, .card-body {
     background-color: black;
-    color: white
-} */
+    color: hsl(0, 0, 60);
+    font-weight: 500;
+}
+h1, .h5 {
+    font-weight: 600;
+}
+a {
+    color: hsl(200, 75, 60);
+    &:hover {
+        color: hsl(200, 75, 75);
+    }
+}
+.card {
+    border: solid 1px grey;
+    margin-top: 2%;
+}
+.btn-outline-secondary {
+    color: lightgrey;
+}
+.btn-outline-primary {
+    color: hsl(211, 60, 65);
+    border-color: hsl(211, 60, 65);
+    &:hover {
+        background-color: hsl(211, 60, 50);
+    }
+}
+.svg-inline--fa {
+    &.fa-html5 {
+        color: hsl(30, 70, 60);
+    }
+    &.fa-css3-alt {
+        color: hsl(200, 60, 60);
+    }
+    &.fa-sass {
+        color: hsl(330, 50, 70);
+    }
+    &.fa-js-square {
+        color: hsl(60, 50, 60);
+    }
+    &.fa-bootstrap {
+        color: hsl(270, 50, 70);
+    }
+    &.fa-react {
+        color: hsl(190, 60, 70);
+    }
+    &.fa-node {
+        color: hsl(120, 40, 65);
+    }
+    &.fa-npm {
+        color: hsl(0, 40, 40);
+    }
+    &.fa-git-alt {
+        color: hsl(15, 50, 50);
+    }
+    &.fa-terminal {
+        color: hsl(0, 0, 70);
+    }
+    &.fa-5x {
+        color: dimgrey;
+        &:hover {
+            color: grey;
+        }
+    }
+}
+@media (prefers-color-scheme: light) {
+    body, .card-body {
+        background-color: hsl(0, 0, 95);
+        color: black;
+        font-weight: 500;
+    }
+    h1, .h5 {
+        font-weight: 600;
+    }
+    a {
+        color: hsl(240, 100, 40);
+        &:hover {
+            color: hsl(240, 100, 60);
+        }
+    }
+    .card {
+        border: solid 1px grey;
+        margin-top: 2%;
+    }
+    .btn-outline-secondary {
+        color: black;
+    }
+    .btn-outline-primary {
+        color: hsl(211, 100, 50);
+        border-color: hsl(211, 100, 50);
+        &:hover {
+            background-color: hsl(211, 100, 50);
+        }
+    }
+    .svg-inline--fa {
+        &.fa-html5 {
+            color: hsl(30, 95, 60);
+        }
+        &.fa-css3-alt {
+            color: hsl(200, 80, 60);
+        }
+        &.fa-sass {
+            color: hsl(330, 70, 70);
+        }
+        &.fa-js-square {
+            color: hsl(60, 85, 45);
+        }
+        &.fa-bootstrap {
+            color: hsl(270, 40, 50);
+        }
+        &.fa-react {
+            color: hsl(190, 70, 60);
+        }
+        &.fa-node {
+            color: hsl(120, 40, 50);
+        }
+        &.fa-npm {
+            color: hsl(0, 60, 60);
+        }
+        &.fa-git-alt {
+            color: hsl(15, 60, 50);
+        }
+        &.fa-terminal {
+            color: hsl(0, 0, 35);
+        }
+    }
+}
 html {
     scroll-behavior: smooth;
 }
