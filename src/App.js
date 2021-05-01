@@ -8,7 +8,7 @@ import Card from 'react-bootstrap/Card';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Button from 'react-bootstrap/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTerminal, faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
+import { faTerminal } from '@fortawesome/free-solid-svg-icons';
 import { faHtml5, faCss3Alt, faSass, faJsSquare, faBootstrap, faReact, faNode, faNpm, faGitAlt, faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 
 function App() {
@@ -101,9 +101,6 @@ function App() {
   ]; */
   const footerIcons = [
     {
-      link: "mailto:nobelharvards@gmail.com",
-      icon: faEnvelopeSquare
-    }, {
       link: "https://www.linkedin.com/in/nobelharvards",
       icon: faLinkedin
     }, {
