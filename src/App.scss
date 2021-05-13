@@ -1,8 +1,8 @@
-.section {
-    margin-bottom: 10%;
+.section:last-of-type {
+    margin-bottom: 40%;
 }
 .heading {
-    padding-top: 5%;
+    margin-top: 5%;
     &--center {
         text-align: center;
     }
@@ -12,7 +12,6 @@
         text-align: center;
     }
 }
-
 body, .card-body {
     background-color: hsl(0, 0, 7);
     color: hsl(0, 0, 80);
@@ -30,6 +29,17 @@ a {
 .card {
     border: solid 1px grey;
     margin-top: 2%;
+    width: 18rem;
+    height: 16rem;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    & > div:last-child, > a:last-of-type {
+        display: flex;
+        justify-content: space-between;
+        margin-top: auto;
+    }
 }
 .btn-outline-secondary {
     color: lightgrey;
@@ -40,6 +50,12 @@ a {
     &:hover {
         background-color: hsl(211, 60, 50);
     }
+}
+.skills {
+    text-align: center;
+}
+.projects {
+    justify-content: center;
 }
 .svg-inline--fa {
     &.fa-html5 {

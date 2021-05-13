@@ -110,14 +110,6 @@ function App() {
   ];
   return (
     <Container>
-      <Navbar fixed="top" expand="lg" variant="dark" bg="dark">
-        <Nav>
-          {navLinks.map(navLink =>
-            <Nav.Link href={navLink.link}>
-              {navLink.text}
-            </Nav.Link>)}
-        </Nav>
-      </Navbar>
       <main>
         <div id="about" class="section section--about">
           <h1 class="heading heading--center heading--about">
@@ -134,7 +126,7 @@ function App() {
           <h1 class="heading heading--center heading--skills">
             Skills
           </h1>
-          <Row>
+          <Row className="skills">
             {skills.map(skill =>
               <Col xs="12" sm="6" md="4" lg="3">
                 <FontAwesomeIcon size="10x" icon={skill.icon}/>
@@ -147,7 +139,7 @@ function App() {
           <h1 class="heading heading--center heading--portfolio">
               Portfolio
           </h1>
-          <Row>
+          <Row className="projects">
           <CardDeck>
             {/* portfolio.map(project =>
               <Col xs="12" sm="6" md="4" lg="3">
@@ -164,12 +156,12 @@ function App() {
                 </Card>
               </Col>
             ) */}
-            <Col xs="12" sm="6" md="4" lg="3">
-              <Card style={{width: "18rem", height: "16rem"}}>
-                <Card.Body style={{display: "flex", flexDirection: "column"}}>
+            <Col xs="12" sm="6" lg="4" xl="3">
+              <Card>
+                <Card.Body>
                   <Card.Title>OMDb API movie search</Card.Title>
                   <Card.Text>Uses OMDb API to search for movies.</Card.Text>
-                  <div style={{display: "flex", justifyContent: "space-between", marginTop: "auto"}}>
+                  <div>
                     <a href="https://github.com/nobelharvards/OMDb-API">
                       <Button variant="outline-secondary">GitHub</Button>
                     </a>
@@ -180,12 +172,12 @@ function App() {
                 </Card.Body>
               </Card>
             </Col>
-            <Col xs="12" sm="6" md="4" lg="3">
-              <Card style={{width: "18rem", height: "16rem"}}>
-                <Card.Body style={{display: "flex", flexDirection: "column"}}>
+            <Col xs="12" sm="6" lg="4" xl="3">
+              <Card>
+                <Card.Body>
                   <Card.Title>Morse code translator</Card.Title>
                   <Card.Text>Translates English to Morse and Morse to English. Also allows custom delimiters.</Card.Text>
-                  <div style={{display: "flex", justifyContent: "space-between", marginTop: "auto"}}>
+                  <div>
                     <a href="https://github.com/nobelharvards/morse-code-translator">
                       <Button variant="outline-secondary">GitHub</Button>
                     </a>
@@ -196,35 +188,35 @@ function App() {
                 </Card.Body>
               </Card>
             </Col>
-            <Col xs="12" sm="6" md="4" lg="3">
-              <Card style={{width: "18rem", height: "16rem"}}>
-                <Card.Body style={{display: "flex", flexDirection: "column"}}>
+            <Col xs="12" sm="6" lg="4" xl="3">
+              <Card>
+                <Card.Body>
                   <Card.Title>QBE insurance quote automation</Card.Title>
                   <Card.Text>Selenium script for getting an anonymous NSW green slip quote at <a href="https://qbe.com/au">QBE Australia</a>.</Card.Text>
-                  <a href="https://github.com/nobelharvards/QBEautomation" style={{marginTop: "auto"}}>
+                  <a href="https://github.com/nobelharvards/QBEautomation">
                     <Button variant="outline-secondary">GitHub</Button>
                   </a>
                 </Card.Body>
               </Card>
             </Col>
-            <Col xs="12" sm="6" md="4" lg="3">
-              <Card style={{width: "18rem", height: "16rem"}}>
-                <Card.Body style={{display: "flex", flexDirection: "column"}}>
+            <Col xs="12" sm="6" lg="4" xl="3">
+              <Card>
+                <Card.Body>
                   <Card.Title>eBay app automation</Card.Title>
                   <Card.Text>Android eBay app automation script.</Card.Text>
                   <Card.Text>Uses Selenium and Appium.</Card.Text>
-                  <a href="https://github.com/nobelharvards/eBayAppAutomation" style={{marginTop: "auto"}}>
+                  <a href="https://github.com/nobelharvards/eBayAppAutomation">
                     <Button variant="outline-secondary">GitHub</Button>
                   </a>
                 </Card.Body>
               </Card>
             </Col>
-            <Col xs="12" sm="6" md="4" lg="3">
-              <Card style={{width: "18rem", height: "16rem"}}>
-                <Card.Body style={{display: "flex", flexDirection: "column"}}>
+            <Col xs="12" sm="6" lg="4" xl="3">
+              <Card>
+                <Card.Body>
                   <Card.Title>Blue dress purchase automation</Card.Title>
                   <Card.Text>Selenium script for buying a blue dress at <a href="http://automationpractice.com">AutomationPractice.com</a>.</Card.Text>
-                  <a href="https://github.com/nobelharvards/UIAutomationAssignment" style={{marginTop: "auto"}}>
+                  <a href="https://github.com/nobelharvards/UIAutomationAssignment">
                     <Button variant="outline-secondary">GitHub</Button>
                   </a>
                 </Card.Body>
@@ -247,6 +239,14 @@ function App() {
           </div>
         </div>
       </main>
+      <Navbar fixed="bottom" expand="lg" variant="dark" bg="dark">
+        <Nav>
+          {navLinks.map(navLink =>
+            <Nav.Link href={navLink.link}>
+              {navLink.text}
+            </Nav.Link>)}
+        </Nav>
+      </Navbar>
     </Container>
   );
 }
